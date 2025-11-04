@@ -1,0 +1,159 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
+  background: #f6f5f2;
+  color: #1f1f1f;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.container {
+  width: min(1100px, 90vw);
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+}
+
+.hero {
+  padding: 3rem 0 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(2.8rem, 6vw, 4rem);
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.cta-grid {
+  margin-top: 2.5rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.cta-card {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 16px 38px rgba(31, 31, 31, 0.08);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.cta-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 54px rgba(31, 31, 31, 0.12);
+}
+
+.cta-card h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #0f172a;
+}
+
+.cta-card p {
+  margin-top: 0.6rem;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.chapter-index {
+  padding: 3rem 0;
+}
+
+.chapter-index h2 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  color: #0f172a;
+}
+
+.chapter-list {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.chapter-list a {
+  display: block;
+  background: white;
+  padding: 1.4rem;
+  border-radius: 14px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  transition: border-color 150ms ease, transform 150ms ease;
+}
+
+.chapter-list a:hover {
+  border-color: rgba(15, 23, 42, 0.22);
+  transform: translateY(-4px);
+}
+
+.chapter-list h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #111827;
+}
+
+.chapter-content {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 20px 48px rgba(15, 23, 42, 0.08);
+  margin-top: 2rem;
+}
+
+.chapter-content h2 {
+  margin-top: 0;
+  font-size: 1.9rem;
+  color: #0f172a;
+}
+
+.chapter-content p {
+  line-height: 1.75;
+  margin-top: 1.4rem;
+  color: #1e293b;
+}
+
+.footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(15, 23, 42, 0.12);
+  color: #475569;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 1rem;
+}
